@@ -38,6 +38,6 @@ RUN pip install -r requirements.txt && \
     python setup.py build_ext -i && \
     python setup.py install
 
-WORKDIR /quinn-pcl/python-pcl/python-pcl
+WORKDIR /quinn-pcl
 
 
