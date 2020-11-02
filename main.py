@@ -129,7 +129,7 @@ def main():
         sampleNP = point_density_filter(sampleNP, 50, .01, 50, .03)
 
     if args.icp:
-        T, sampleNP = pcl_icp(sampleNP, referenceNP)
+        pcl_icp.pcl_icp(sampleNP, referenceNP)
 
     if args.octreeChange:
         change_detection(sampleNP, referenceNP, 5)

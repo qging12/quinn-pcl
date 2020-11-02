@@ -90,8 +90,9 @@ def pcl_icp(npSample, npReference):
     referenceCloud.from_array(npReference)
 
     icp = sampleCloud.make_IterativeClosestPoint()
-    converged, transf, estimate, fitness = icp.icp(sampleCloud, referenceCloud)
+    converged, transf, estimate, fitness = icp.icp(sampleCloud, referenceCloud, 100)
     print('has converged:' + str(converged) + ' score: ' + str(fitness))
+    print(transf)
     return
 if __name__ == "__main__":
     # import cProfile

@@ -39,7 +39,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-def octree_cd(sampleCloud, referenceCloud, res):
+def cd(sampleCloud, referenceCloud, res):
     resolution = res
     cloudA = pcl.PointCloud()
     cloudA.from_array(sampleCloud)
